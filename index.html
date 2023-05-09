@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <div id="container">
+
+        <div id="field-search">
+            <h2>Verificar clima de uma cidade:</h2>
+            <input type="text" id="input-city" placeholder="Digite uma cidade">
+            <button type="button" value="" id="btn-load" onclick="search()">
+               <img id="img-glass" src="imgs/lupa.png" alt="">
+            </button>
+            
+            <div id="info-tempField">
+                <div id="info-container">
+                    <img src="imgs/pino-de-localizacao.png" alt="">
+                    <h3 id="receiver-city"></h3>
+                </div>
+
+                <hr>
+                <p id="receiver-temperature"></p>
+
+                <div id="field-climate">
+                    <p id="climate"></p>
+                    <img id="icon" src="" alt="">
+                </div>    
+
+                <div id="details-container">
+                    <img src="imgs/umidade.png" alt="">
+                    <p id="receiver-moisture"></p>
+                    <span></span>
+                    <img src="imgs/vento.png" alt="">
+                    <p id="receiver-wind"></p>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+    <div id="city-error">
+            <div class="to-close" onclick="closeError()"></div>
+            <div class="to-close"  onclick="closeError()"></div>
+            <h4>Cidade não encontrada</h4>
+            <img src="imgs/triste.png" alt="">
+            <button id="close-error" onclick="closeError()">Tentar novamente</button>
+    </div>
+    <div class="field-clouds">
+        <div class="clouds-bottom"></div>
+        <div class="clouds-bottom"></div>
+        <div class="clouds-bottom"></div>
+        <div class="clouds-bottom"></div>
+        <div class="clouds-bottom"></div>
+        <div class="clouds-bottom"></div>
+        <div class="clouds-bottom"></div>
+        <div class="clouds-bottom"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
